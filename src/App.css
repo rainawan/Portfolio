@@ -5,7 +5,7 @@
 }
 
 @font-face {
-  font-family: Lemon;
+  font-family: Lemon_Medium;
   src: url('./assets/fonts/LEMONMILK-Medium.otf');
   font-weight: 700;
 }
@@ -538,10 +538,46 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 
+/************ Timeline Css ************/
+.timeline {
+  background: #add8e6;
+  font-family: Lemon;
+  font-size: 14px;
+  color: rgb(53, 53, 53);
+}
+
+.timeline .title {
+  font-size: 5em;
+  text-align: center;
+  font-family: Lemon_Medium;
+}
+
+.timeline .h3 {
+  padding-top: 0.25em;
+}
+
+.timeline .vertical-timeline-element-content {
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+    0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+  padding: 2em 3em !important;
+}
+
+.timeline .date {
+  color: rgb(255, 255, 255);
+  font-family: Lemon_Medium;
+}
+
+.timeline .description {
+  margin: 1.5em 0 2em 0;
+}
 
 
 
 
+
+
+
+/************ App Css ************/
 
 .App {
   text-align: center;

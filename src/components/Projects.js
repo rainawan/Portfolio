@@ -11,6 +11,8 @@ export const Projects = () => {
             title: "YouBelong Snap Mini",
             description: "snap mini prototype",
             imageUrl: project_img,
+            appUrl: "https://www.netflix.com/browse",
+            githubUrl: "https://www.google.com/",
         },
         {
             title: "Mary Lane Cafe",
