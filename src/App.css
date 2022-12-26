@@ -102,6 +102,7 @@ nav.navbar a.navbar-brand {
     width: 15%;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
+  font-family: Lemon;
   font-weight: 400;
   color: #fff !important;
   letter-spacing: 0.8px;
@@ -243,16 +244,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-.banner .tagline {
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  font-size: 20px;
-  margin-bottom: 16px;
-  display: inline-block;
 }
 .banner h1 {
   font-size: 65px;
@@ -477,6 +468,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 42px;
   position: absolute;
   border-radius: 50%;
+  margin-left: 200px;
 }
 
 /************ Contact Css ************/
@@ -555,7 +547,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Timeline Css ************/
 .timeline {
   background: #add8e6;
-  font-family: Lemon;
   font-size: 14px;
   color: rgb(53, 53, 53);
 }
