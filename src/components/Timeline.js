@@ -9,6 +9,24 @@ export const Timeline = () => {
     const timeline_elements = [
         {
             id: 1,
+            title: "Pasadena City College",
+            location: "B.S. Computer Science",
+            description: ['1111','22222'],
+                // "Honors Program; She.Codes Secretary; ",
+            date: "August 2021 - June 2023",
+            icon: "school",
+        },
+        {
+            id: 2,
+            title: "Front Office Manager",
+            location: "Temple City, CA",
+            description: 
+                "Verified identification and documentation of 30+ visitors/hr while facilitating over 200 calls/day. Managed administrative functions for the CEO of a multinational realty investment company.",
+            date: "August 2021 - May 2023",
+            icon: "school",
+        },
+        {
+            id: 3,
             title: "Computer Science at PCC",
             location: "Pasadena, CA",
             description: 
@@ -47,7 +65,8 @@ export const Timeline = () => {
                                 <h5 className="vertical-timeline-element-subtitle">
                                     {element.location}
                                 </h5>
-                                <p id="description">{element.description}</p>
+                                <p className="description" id="description">{element.description}</p>
+                                
                                 {showButton && (
                                     <a
                                     className={`button ${

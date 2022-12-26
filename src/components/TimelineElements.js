@@ -1,4 +1,4 @@
-let timeline_elements = [
+const timeline_elements = [
     {
         id: 1,
         title: "Computer Science at PCC",

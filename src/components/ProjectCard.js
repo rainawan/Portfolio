@@ -1,4 +1,5 @@
 import { Col } from "react-bootstrap";
+import github from '../assets/images/github.png';
 
 export const ProjectCard = ({ title, description, imageUrl }) => {
     return (
@@ -8,7 +9,9 @@ export const ProjectCard = ({ title, description, imageUrl }) => {
                 <div className="proj-txtx">
                     <h4>{title}</h4>
                     <span>{description}</span>
-                    
+                    <div className="git-icon">
+                        <a href="https://www.google.com/"><img src={github} alt="" /></a>
+                    </div>
                 </div>
             </div>
         </Col>

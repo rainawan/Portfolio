@@ -9,6 +9,13 @@
   src: url('./assets/fonts/LEMONMILK-Medium.otf');
   font-weight: 700;
 }
+
+@font-face {
+  font-family: Jost;
+  src: url('./assets/fonts/Jost-VariableFont_wght.ttf');
+  font-weight: 700;
+}
+
 /* CSS */
 * {
   margin: 0;
@@ -464,8 +471,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   right: 0;
   z-index: -4;
 }
+.git-icon {
+  content: "";
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  border-radius: 50%;
+}
 
-/************ Projects Css ************/
+/************ Contact Css ************/
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   padding: 60px 0 200px 0;
@@ -569,6 +583,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .timeline .description {
   margin: 1.5em 0 2em 0;
+  font-family: Jost;
 }
 
 
