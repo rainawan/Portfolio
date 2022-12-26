@@ -6,7 +6,7 @@ import headerImg from "../assets/images/temp_header.svg";
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Frontend Developer", "Backend Developer", "Web Designer"];
+    const toRotate = ["Software Engineer", "CS Student"];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const period = 2000;
@@ -24,7 +24,7 @@ export const Banner = () => {
         let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
         setText(updatedText);
         if (isDeleting) {
-            setDelta(prevDelta => prevDelta / 2)
+            setDelta(prevDelta => prevDelta / 3)
         }
         if (!isDeleting && updatedText === fullText) { 
             setIsDeleting(true);
@@ -32,7 +32,7 @@ export const Banner = () => {
         } else if (isDeleting && updatedText === '') {
             setIsDeleting(false);
             setLoopNum(loopNum + 1);
-            setDelta(500);
+            setDelta(2000);
         }
     }
 
@@ -42,7 +42,7 @@ export const Banner = () => {
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">hello this is portfolio</span>
-                        <h1>{'howdy im raina, a '}<span className="wrap">{text}</span></h1>
+                        <h1>{'Hi! Im Raina, a '}<span className="wrap">{text}</span></h1>
                         <p>words words words about me words words words</p>
                         <button onClick={() => console.log('connect')}>Let's connect <ArrowRightCircle size={25}></ArrowRightCircle></button>
                     </Col>
