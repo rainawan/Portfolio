@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import { ArrowRight, ArrowRightCircle } from "react-bootstrap-icons";
-import headerImg from "../assets/images/temp_header.svg";
+import headerImg from "../assets/images/me.png";
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -45,7 +45,8 @@ export const Banner = () => {
                         <p>words words words about me words words words</p>
                         <button onClick={() => console.log('connect')}>Let's connect <ArrowRightCircle size={25}></ArrowRightCircle></button>
                     </Col>
-                    <Col xs={12} md={6} xl={5}>
+                    {/* <Col xs={12} md={6} xl={5}> */}
+                    <Col xs={12} md={4} xl={4}>
                         <img src={headerImg} alt="Header Image" />
                     </Col>
                 </Row>
