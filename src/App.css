@@ -96,7 +96,7 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background-color: #fccad2;
 }
 nav.navbar a.navbar-brand {
     width: 15%;
@@ -253,15 +253,38 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 20px;
   display: block;
 }
+.banner .cursor {
+  font-size: 65px;
+  padding-right: 20px;
+  display: inline-block;
+}
+.cursor:after {
+  content: '';
+  width: 20px;
+  height: 2px;
+  background: black;
+  opacity: 0;
+  display: inline-block;
+  animation: blink 1s linear infinite alternate;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .banner p {
-  color: #B8B8B8;
+  color: #565656;
   font-size: 18px;
+  font-weight: 500;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
 }
 .banner button {
-  color: #fff;
+  color: rgb(131, 67, 0);
   font-weight: 700;
   font-size: 20px;
   margin-top: 60px;
@@ -280,6 +303,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner img {
   animation: updown 3s linear infinite;
+  margin-left: 50px;
 }
 @keyframes updown {
     0% {
@@ -298,6 +322,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Skills Css ************/
 .skill {
+  background-image: url('./assets/images/colorsharp.jpg');
+  /* background-position: top center; */
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 0 0 50px 0;
   position: relative;
 }
@@ -313,11 +341,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-weight: 700;
 }
 .skill p {
-    color: #B8B8B8;
+    color: #000000;
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
-    margin: 14px 0 75px 0;
+    margin: 14px 0 60px 0;
+    padding-inline: 10% 10%;
+    writing-mode: horizontal-tb;
 }
 .skill-slider {
   width: 80%;
@@ -329,6 +359,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 0 auto 15px auto;
 }
 .background-image-left {
+  background-size: cover;
   top: 28%;
   position: absolute;
   bottom: 0;
