@@ -11,23 +11,36 @@ export const Projects = () => {
             title: "YouBelong Snap Mini",
             description: "snap mini prototype",
             imageUrl: project_img,
-            appUrl: "https://www.netflix.com/browse",
-            githubUrl: "https://www.google.com/",
+            appUrl: "",
+            githubUrl: "https://github.com/rainawan/FosterYouth",
         },
         {
             title: "Mary Lane Cafe",
             description: "multipage responsive website",
             imageUrl: project_img,
+            appUrl: "https://rainawan.github.io/marylanecafe/index.html",
+            githubUrl: "https://github.com/rainawan/marylanecafe",
+        },
+        {
+            title: "Spotify Webpage", 
+            description: "c++ object oriented games",
+            imageUrl: project_img,
+            appUrl: "https://snap-engineering-academy-2022.github.io/classwebsite/rainawan/",
+            githubUrl: "https://github.com/Snap-Engineering-Academy-2022/classwebsite/tree/main/rainawan",
+        },
+        {
+            title: "Recipes API", 
+            description: "",
+            imageUrl: project_img,
+            appUrl: "",
+            githubUrl: "https://github.com/rainawan/RecipesAPI",
         },
         {
             title: "SFML Games", 
             description: "c++ object oriented games",
             imageUrl: project_img,
-        },
-        {
-            title: "SFML Games", 
-            description: "c++ object oriented games",
-            imageUrl: project_img,
+            appUrl: "",
+            githubUrl: "https://github.com/rainawan/SFML_Portfolio",
         }
     ];
 

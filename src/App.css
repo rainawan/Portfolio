@@ -493,14 +493,33 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   right: 0;
   z-index: -4;
 }
+.web-icon {
+  content: "";
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  border-radius: 50%;
+  padding-top: 15px;
+  margin-left: 150px;
+}
+.web-icon:hover {
+  filter: brightness(0) invert(1);
+}
 .git-icon {
   content: "";
   width: 42px;
   height: 42px;
   position: absolute;
   border-radius: 50%;
+  padding-top: 15px;
   margin-left: 200px;
 }
+.git-icon:hover {
+  filter: brightness(0) invert(1);
+}
+
+
 
 /************ Contact Css ************/
 .contact {
