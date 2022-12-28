@@ -2,6 +2,8 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from '../assets/images/temp_colorsharp2.png';
 import project_img from '../assets/images/temp_projectimg1.png';
+import youbelong from '../assets/images/project1.png';
+import marylane from '../assets/images/project2.png';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
@@ -10,14 +12,14 @@ export const Projects = () => {
         {
             title: "YouBelong Snap Mini",
             description: "snap mini prototype",
-            imageUrl: project_img,
-            appUrl: "",
+            imageUrl: youbelong,
+            appUrl: "https://www.youtube.com/watch?v=xCRQtvLTHfc",
             githubUrl: "https://github.com/rainawan/FosterYouth",
         },
         {
             title: "Mary Lane Cafe",
             description: "multipage responsive website",
-            imageUrl: project_img,
+            imageUrl: marylane,
             appUrl: "https://rainawan.github.io/marylanecafe/index.html",
             githubUrl: "https://github.com/rainawan/marylanecafe",
         },
