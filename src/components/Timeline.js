@@ -5,13 +5,24 @@ import { ReactComponent as SchoolIcon } from '../assets/images/school.svg';
 import { ReactComponent as WorkIcon } from '../assets/images/school.svg';
 
 export const Timeline = () => {
-   
+    
+    <html>
+        <body>
+            <div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            </div>
+        </body>
+    </html>
+
     const timeline_elements = [
         {
             id: 1,
             title: "Pasadena City College",
             location: "B.S. Computer Science",
-            description: "Honors Program",
+            description: 'Achievements: Honor\'s Program; She.Codes Secretary',
+            description2: 'Relevant Coursework: Object-Oriented Programming; Data Structures and Algorithms; Multivariable Calculus',
             date: "August 2021 - June 2023 (Before Transfer)",
             icon: "school",
         },
@@ -19,7 +30,7 @@ export const Timeline = () => {
             id: 2,
             title: "Front Office Manager",
             location: "Treelane Realty Group",
-            description: "",
+            description: "twat",
             date: "Sept 2021 - June 2022",
             icon: "work",
         },
@@ -54,6 +65,7 @@ export const Timeline = () => {
                     {
                         timeline_elements.map((element) => {
                             let isWorkIcon = element.icon === "work";
+                            let isPCC = element.title === "Pasadena City College";
                             let showButton =
                                 element.buttonText !== undefined &&
                                 element.buttonText !== null &&
@@ -72,7 +84,9 @@ export const Timeline = () => {
                                 <h5 className="vertical-timeline-element-subtitle">
                                     {element.location}
                                 </h5>
-                                <p className="description" id="description">{element.description}</p>
+                                {isPCC ? <p className="description" id="description">{element.description}<br></br>{element.description2}</p>
+                                : <p className="description" id="description">{element.description}</p>}
+                                {/* <p className="description" id="description">{element.description}</p> */}
                                 
                                 {showButton && (
                                     <a

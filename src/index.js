@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { useEffect, useRef, useState } from 'react'
+import HALO from "vanta/dist/vanta.halo.min"
+import * as THREE from "three"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

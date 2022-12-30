@@ -1,7 +1,9 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { ArrowRight, ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/images/me.png";
+import HALO from "vanta/dist/vanta.halo.min"
+import * as THREE from "three"
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -17,6 +19,34 @@ export const Banner = () => {
         }, delta)
         return () => { clearInterval(ticker) };
     }, [text])
+
+    useEffect(() => {
+        const threeScript = document.createElement("script");
+        threeScript.setAttribute("id", "threeScript");
+        threeScript.setAttribute("src", "https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js");
+        document.getElementsByTagName("head")[0].appendChild(threeScript);
+        return () => {
+            if(threeScript) {
+                threeScript.remove();
+            }
+        }
+    }, []);
+
+    // const [ vantaEffect, setVantaEffect ] = useState(0)
+    // const vantaRef = useRef(null)
+    // useEffect(() => {
+    //     if(!vantaEffect) {
+    //         setVantaEffect (
+    //             HALO({
+    //                 el: vantaRef.current,
+    //                 THREE
+    //             })
+    //         )
+    //     }
+    //     return() => {
+    //         if(vantaEffect) vantaEffect.destroy()
+    //     }
+    // }, [vantaEffect])
 
     const tick = () => {
         let i = loopNum % toRotate.length;
@@ -44,7 +74,7 @@ export const Banner = () => {
                         <h1>Hi! I'm Raina,<br></br><span className="wrap">a {text}</span></h1>
                         {/* <h1 className="cursor">_</h1> */}
                         <p>I am a second-year Computer Science student at Pasadena City College, pursuing a career in software engineering.</p>
-                        <button onClick={() => console.log('connect')}>Let's connect <ArrowRightCircle size={25}></ArrowRightCircle></button>
+                        {/* <button onClick={() => console.log('connect')}>Let's connect <ArrowRightCircle size={25}></ArrowRightCircle></button> */}
                     </Col>
                     <Col xs={12} md={6} xl={4}>
                         <img src={headerImg}alt="Header Image" />
