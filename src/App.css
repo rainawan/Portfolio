@@ -91,7 +91,7 @@ p.danger {
 	color: red;
 }
 /************ Navbar Css ************/
-nav.navbar {
+/* nav.navbar {
   padding: 18px 0;
   position: fixed;
   width: 100%;
@@ -118,33 +118,33 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
-}
-span.navbar-text {
+} */
+/* span.navbar-text {
     display: flex;
     align-items: center;
-}
+} */
 .social-icon {
     display: inline-block;
-    margin-left: 14px;
+    margin-left: 0px;
 }
 .social-icon a {
     width: 42px;
     height: 42px;
-    background: rgba(217, 217, 217, 0.1);
+    background: rgba(47, 47, 47, 0.1);
     display: inline-flex;
     border-radius: 50%;
     margin-right: 6px;
     align-items: center;
     justify-content: center;
     line-height: 1;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(97, 96, 96, 0.5);
 }
 .social-icon a::before {
     content: "";
     width: 42px;
     height: 42px;
     position: absolute;
-    background-color: #ffffff;
+    background-color: #615959;
     border-radius: 50%;
     transform: scale(0);
 	transition: 0.3s ease-in-out;
@@ -162,8 +162,8 @@ span.navbar-text {
 }
 .navbar-text button {
   font-weight: 700;
-  color: #fff;
-  border: 1px solid #fff;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
   padding: 18px 34px;
   font-size: 18px;
   margin-left: 18px;
@@ -179,7 +179,7 @@ span.navbar-text {
   width: 0%;
   height: 100%;
   position: absolute;
-  background-color: #fff;
+  background-color: #add8e6;
   left: 0;
   top: 0;
   z-index: -1;
@@ -194,10 +194,10 @@ span.navbar-text {
 	height: 100%;
 	position: absolute;
 }
-nav.navbar .navbar-toggler:active,
+/* nav.navbar .navbar-toggler:active,
 nav.navbar .navbar-toggler:focus {
 	outline: none;
-    box-shadow: none;
+  box-shadow: none;
 }
 nav.navbar .navbar-toggler-icon {
   width: 24px;
@@ -233,12 +233,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 	transform: translateY(8px) rotate(-45deg);
-	background-color: #fff;
+	background-color: rgb(130, 52, 52);
 	height: 2px;
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
-}
+} */
 
 
 
@@ -284,7 +284,7 @@ nav a.active {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 260px 0 300px 0;
   /* background-image: url('./assets/images/banner.jpg'); */
   /* background: '#halo-background' */
   background-color: transparent;
@@ -293,7 +293,7 @@ nav a.active {
   background-repeat: no-repeat;
 }
 .banner h1 {
-  font-size: 65px;
+  font-size: 60px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
@@ -352,7 +352,7 @@ nav a.active {
   animation: updown 3s linear infinite;
   margin-left: 50px;
 }
-@keyframes updown {
+/* @keyframes updown {
     0% {
         transform: translateY(-20px);
     }
@@ -362,10 +362,10 @@ nav a.active {
     100% {
         transform: translateY(-20px);
     }
-}
-.txt-rotate > .wrap {
+} */
+/* .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
-}
+} */
 
 /************ Skills Css ************/
 .skill {
@@ -569,6 +569,82 @@ nav a.active {
 
 
 /************ Experience Css ************/
+.app__skills {
+  flex: 1;
+  width: 100%;
+  /* flex-direction: column; */
+}
+
+.app__skills-container {
+  width: 80%;
+  margin-top: 3rem;
+
+  display: grid;
+  grid-template-columns: repeat(5, 3.125em);
+  /* flex-direction: row; */
+
+  
+
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.app__skills-list {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 30px;
+  margin-right: 5rem;
+  
+
+  @media screen and (max-width: 900px) {
+    margin-right: 0;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.app__skills-item {
+  flex-direction: column;
+  text-align: center;
+  margin: 1rem;
+  transition: all 0.3s ease-in-out;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fef4f5;
+  padding-bottom: 30px;
+
+
+  /* div {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #fef4f5;
+
+    img {
+      width: 50%;
+      height: 50%;
+    }
+
+    &:hover {
+      box-shadow: 0 0 25px #fef4f5;
+    } */
+
+    @media screen and (min-width: 2000px) {
+      width: 150px;
+      height: 150px;
+    }
+
+    @media screen and (max-width: 450px) {
+      width: 70px;
+      height: 70px;
+    }
+  }
 
 
 

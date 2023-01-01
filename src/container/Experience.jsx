@@ -1,16 +1,44 @@
 import React, { useState, useEffect } from "react";
 import { motion } from 'framer-motion';
 import {Tooltip} from 'react-tooltip';
-import { Skills } from "../components/Skills";
 
-// import './Experience.scss';
+import javascript from '../assets/images/javascript.png';
 
 const Experience = () => {
     
     const skills = [
         {
-            skill: "JavaScript",
-        }
+            name: "JavaScript",
+            img: javascript,
+        },
+        {
+            name: "JavaScript",
+            img: javascript,
+        },
+        {
+            name: "JavaScript",
+            img: javascript,
+        },
+        {
+            name: "JavaScript",
+            img: javascript,
+        },
+        {
+            name: "JavaScript",
+            img: javascript,
+        },
+        {
+            name: "JavaScript",
+            img: javascript,
+        },
+        {
+            name: "JavaScript",
+            img: javascript,
+        },
+        {
+            name: "JavaScript",
+            img: javascript,
+        },
     ]
     const experiences = [
         {
@@ -37,13 +65,13 @@ const Experience = () => {
                         className="app__flex"
                         style={{ backgroundColor: skill.bgColor }}
                     >
-                        {/* <img src={urlFor(skill.icon)} alt={skill.name} /> */}
+                        <img src={skill.img} alt="Image" />
                     </div>
                     <p className="p-text">{skill.name}</p>
                     </motion.div>
                 ))}
             </motion.div>
-            <div className="app__skills-exp">
+            {/* <div className="app__skills-exp">
                 {experiences.map((experience) => (
                     <motion.div
                     className="app__skills-exp-item"
@@ -79,7 +107,7 @@ const Experience = () => {
                     </motion.div>
                     </motion.div>
                 ))}
-            </div>
+            </div> */}
         </div>
         </>
     )
