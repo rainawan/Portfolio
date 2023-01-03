@@ -10,11 +10,13 @@ export const ProjectCard = ({ title, description, githubUrl, appUrl, imageUrl })
                 <div className="proj-txtx">
                     <h4>{title}</h4>
                     <span>{description}</span>
-                    <div className="web-icon">
-                        <a href={appUrl} target="_blank"><img src={webpage} alt="" /></a>
-                    </div>
-                    <div className="git-icon">
-                        <a href={githubUrl} target="_blank"><img src={github} alt="" /></a>
+                    <div className="icons">
+                        <div className="web-icon">
+                            <a href={appUrl} target="_blank"><img src={webpage} alt="" /></a>
+                        </div>
+                        <div className="git-icon">
+                            <a href={githubUrl} target="_blank"><img src={github} alt="" /></a>
+                        </div>
                     </div>
                 </div>
             </div>

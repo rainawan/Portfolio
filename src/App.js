@@ -9,6 +9,7 @@ import { Timeline } from './components/Timeline';
 import Experience from './container/Experience';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 function App() {
   return (
     <div className="App">
@@ -17,7 +18,6 @@ function App() {
       <Experience />
       <Projects />
     </div>
-    
   );
 }
 

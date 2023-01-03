@@ -1,8 +1,6 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import TrackVisibility from 'react-on-screen';
-import colorSharp2 from '../assets/images/temp_colorsharp2.png';
-import project_img from '../assets/images/temp_projectimg1.png';
 import youbelong from '../assets/images/project1.png';
 import marylane from '../assets/images/project2.png';
 import spotify from '../assets/images/project3.png';
@@ -50,7 +48,7 @@ export const Projects = () => {
     ];
 
     return (
-        <section className="project" id="project">
+        <section className="projects" id="projects">
             <Container>
                 <Row>
                     <Col size={12}>
@@ -81,7 +79,6 @@ export const Projects = () => {
                     </Col>
                 </Row>
             </Container>
-            {/* <img clssName="background-image-right" src={colorSharp2}></img> */}
         </section>
     )
 }
