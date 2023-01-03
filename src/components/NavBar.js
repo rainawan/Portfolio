@@ -35,7 +35,7 @@ export const NavBar = () => {
     return (
         <nav>
             <a href="#" onClick={()=>setActiveNav('#')} className={activeNav === '#' ? 'active' : ''} ><AiOutlineHome/></a>
-            <a href="#skills" onClick={()=>setActiveNav('#about')} className={activeNav === '#skills' ? 'active' : ''}><BiBook/></a>
+            <a href="#experience" onClick={()=>setActiveNav('#about')} className={activeNav === '#experience' ? 'active' : ''}><BiBook/></a>
             <a href="#project"><GrProjects/></a>
 
         </nav>

@@ -1,77 +1,104 @@
 import React, { useState, useEffect } from "react";
 import { motion } from 'framer-motion';
-import {Tooltip} from 'react-tooltip';
+// import { Tooltip } from 'react-tooltip'
+import { Tooltip as ReactTooltip } from 'react-tooltip'
+// import Tooltip from "react-bootstrap/Tooltip";
+// import ReactTooltip from "react-tooltip";
+// import {TooltipProvider as ReactTooltip} from "react-tooltip";
+import ReactDOMServer from 'react-dom/server';
 
+import python from '../assets/images/python.png';
+import cplusplus from '../assets/images/cplusplus.png';
 import javascript from '../assets/images/javascript.png';
+import react from '../assets/images/react.webp';
+import html from '../assets/images/html.png';
+import css from '../assets/images/css.png';
+import github from '../assets/images/github.png';
 
 const Experience = () => {
     
     const skills = [
         {
-            name: "JavaScript",
-            img: javascript,
+            name: "Python",
+            img: python,
+        },
+        {
+            name: "C++",
+            img: cplusplus,
         },
         {
             name: "JavaScript",
             img: javascript,
         },
         {
-            name: "JavaScript",
-            img: javascript,
+            name: "React",
+            img: react,
         },
         {
-            name: "JavaScript",
-            img: javascript,
+            name: "HTML",
+            img: html,
         },
         {
-            name: "JavaScript",
-            img: javascript,
+            name: "CSS",
+            img: css,
         },
         {
-            name: "JavaScript",
-            img: javascript,
-        },
-        {
-            name: "JavaScript",
-            img: javascript,
-        },
-        {
-            name: "JavaScript",
-            img: javascript,
+            name: "GitHub",
+            img: github,
         },
     ]
     const experiences = [
         {
-            name: "Snap Scholar",
-            year: 2022,
-            company: "rfrs",
-            desc: "fsfd",
-        }
+            year: "2022",
+            works: [
+                {
+                    name: "Snap Engineering Academy Scholar",
+                    desc: 'desc',
+                    company: 'Snap Inc.',
+                },
+                {
+                    name: "Secretary",
+                    desc: 'desc',
+                    company: 'Society of Women Engineers',
+                },
+            ]
+        },
+        {
+            year: "2021",
+            works: [
+                {
+                    name: "Front Office Manager",
+                    desc: 'desc',
+                    company: 'Treelane Realty',
+                }
+            ]
+        },
     ]
 
+
     return (
-        <>
-        <h2 className="head-text">Skills and Experiences</h2>
-        <div className="app__skills-container">
-            <motion.div className="app__skills-list">
-                {skills.map((skill) => (
-                    <motion.div
-                    whileInView={{ opacity: [0, 1] }}
-                    transition={{ duration: 0.5 }}
-                    className="app__skills-item app__flex"
-                    key={skill.name}
-                    >
-                    <div
-                        className="app__flex"
-                        style={{ backgroundColor: skill.bgColor }}
-                    >
-                        <img src={skill.img} alt="Image" />
-                    </div>
-                    <p className="p-text">{skill.name}</p>
-                    </motion.div>
-                ))}
-            </motion.div>
-            {/* <div className="app__skills-exp">
+        <section className="experience" id="experience">
+            <h2 className="head-text">Skills and Experiences</h2>
+            <div className="app__skills-container">
+                <motion.div className="app__skills-list">
+                    {skills.map((skill) => (
+                        <motion.div
+                        whileInView={{ opacity: [0, 1] }}
+                        transition={{ duration: 0.5 }}
+                        className="app__skills-item"
+                        key={skill.name}
+                        >
+                        <div
+                            className="app__flex"
+                            style={{ backgroundColor: skill.bgColor }}
+                        >
+                            <img src={skill.img} alt="Image" />
+                        </div>
+                        <p className="p-text">{skill.name}</p>
+                        </motion.div>
+                    ))}
+                </motion.div>
+                <div className="app__skills-exp">
                 {experiences.map((experience) => (
                     <motion.div
                     className="app__skills-exp-item"
@@ -94,22 +121,25 @@ const Experience = () => {
                             <h4 className="bold-text">{work.name}</h4>
                             <p className="p-text">{work.company}</p>
                             </motion.div>
-                            <Tooltip
+
+                            <ReactTooltip
                             id={work.name}
                             effect="solid"
                             arrowColor="#fff"
                             className="skills-tooltip"
                             >
                             {work.desc}
-                            </Tooltip>
+                            </ReactTooltip>
+
+
                         </>
                         ))}
                     </motion.div>
                     </motion.div>
                 ))}
-            </div> */}
-        </div>
-        </>
+                </div>
+            </div>
+        </section>
     )
 }
 

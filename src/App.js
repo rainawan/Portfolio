@@ -15,9 +15,7 @@ function App() {
       <NavBar />
       <Banner />
       <Experience />
-      {/* <Skills /> */}
       <Projects />
-      <Timeline />
     </div>
     
   );

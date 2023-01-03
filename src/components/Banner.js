@@ -9,7 +9,7 @@ import navIcon3 from '../assets/images/nav-icon3.svg';
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Software Engineer", "Full-Stack Developer"];
+    const toRotate = ["Software Engineer", ""];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(100 - Math.random() * 10);
     const period = 2000;
