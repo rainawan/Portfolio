@@ -453,7 +453,7 @@ nav a.active {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-bottom: 250px;
+  /* padding-bottom: 250px; */
   margin-right: 5rem;
   margin-left: 5rem;
   
@@ -532,9 +532,11 @@ nav a.active {
   margin-bottom: 1rem;
   cursor: pointer;
 }
+.app__skills-exp-work .work-desc {
+  text-align: left;
+}
 .app__skills-exp-work h4 {
   font-weight: 600;
-  text-align: left;
 }
 .app__skills-exp-work p {
   font-weight: 400;
@@ -561,6 +563,10 @@ nav a.active {
   text-align: center !important;
   line-height: 1.5 !important;
   opacity: 1 !important;
+  /* left: calc(100% + var(--tooltip-margin)); */
+  /* top: 50%; */
+  transform: translateX(200%) translateY(-150%);
+
 
   @media screen and (min-width: 2000px) {
     font-size: 1.75rem !important;

@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { motion } from 'framer-motion';
-// import { Tooltip } from 'react-tooltip'
+import "react-tooltip/dist/react-tooltip.css";
 import { Tooltip as ReactTooltip } from "react-tooltip";
-// import Tooltip from "react-bootstrap/Tooltip";
-// import ReactTooltip from "react-tooltip";
-// import {TooltipProvider as ReactTooltip} from "react-tooltip";
-import ReactDOMServer from 'react-dom/server';
+
 
 import python from '../assets/images/python.png';
 import cplusplus from '../assets/images/cplusplus.png';
@@ -53,12 +50,12 @@ const Experience = () => {
             works: [
                 {
                     name: "Snap Engineering Academy Scholar",
-                    desc: 'desc',
+                    desc: 'snap snap',
                     company: 'Snap Inc.',
                 },
                 {
                     name: "Secretary",
-                    desc: 'desc',
+                    desc: 'swe swe swe',
                     company: 'Society of Women Engineers',
                 },
             ]
@@ -68,7 +65,7 @@ const Experience = () => {
             works: [
                 {
                     name: "Front Office Manager",
-                    desc: 'desc',
+                    desc: 'yes it finally works',
                     company: 'Treelane Realty',
                 }
             ]
@@ -108,7 +105,7 @@ const Experience = () => {
                         <div className="app__skills-exp-year">
                             <p className="bold-text">{experience.year}</p>
                         </div>
-                        <motion.div className="app__skills-exp-works">
+                        <motion.div className="app__skills-exp-works" >
                             {experience.works.map((work) => (
                             <>
                                 <motion.div
@@ -119,10 +116,19 @@ const Experience = () => {
                                 data-for={work.name}
                                 key={work.name}
                                 >
-                                <h4 className="bold-text">{work.name}</h4>
-                                <p className="p-text">{work.company}</p>
+                                <div className="work-desc" id={work.name}>
+                                    <h4 className="bold-text">{work.name}</h4>
+                                    <p className="p-text">{work.company}</p>
+                                </div>
                                 </motion.div>
                                 
+                                <ReactTooltip
+                                    anchorId={work.name}
+                                    className="skills-tooltip"
+                                    place="bottom"
+                                    variant="info"
+                                    content={work.desc}
+                                />
 
 
                                 {/* <ReactTooltip
