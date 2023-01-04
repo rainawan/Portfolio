@@ -12,8 +12,29 @@ import { GrProjects } from 'react-icons/gr';
 export const NavBar = () => {
 
     const [activeNav, setActiveNav] = useState('#');
-    const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
+
+
+    const sections = document.querySelectorAll('section');
+    const navLi = document.querySelectorAll("nav .container ul li");
+    window.onscroll = () => {
+        var current = "";
+
+        sections.forEach((section) => {
+            const sectionTop = section.offsetTop;
+            // eslint-disable-next-line no-restricted-globals
+            if (pageYOffset >= sectionTop - 60) {
+            current = section.getAttribute('id'); }
+        });
+
+        navLi.forEach((li) => {
+            li.classList.remove('active');
+            if (li.href.includes(current)) {
+                li.classList.add('active');
+                }
+        });
+    };
+
 
     useEffect(() => {
         const onScroll = () => {
@@ -28,10 +49,6 @@ export const NavBar = () => {
         return () => window.removeEventListener("scroll", onScroll);
     }, [])
 
-    const onUpdateActiveLink = (value) => {
-        setActiveLink(value);
-    }
-//className={activeNav === '#' ? 'active' : ''}
     return (
         <nav>
             <a href="#" onClick={()=>setActiveNav('#')} className={activeNav === '#' ? 'active' : ''} ><AiOutlineHome/></a>
@@ -39,33 +56,5 @@ export const NavBar = () => {
             <a href="#projects" onClick={()=>setActiveNav('#projects')} className={activeNav === '#projects' ? 'active' : ''}><GrProjects/></a>
 
         </nav>
-        // <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
-        //     <h3><AiFillHome/></h3>
-        //     <Container>
-        //         <Navbar.Brand href="#home">
-        //             <img src={logo} alt="Logo"/>
-        //         </Navbar.Brand>
-        //         <Navbar.Toggle aria-controls="basic-navbar-nav">
-        //             <span className="navbar-toggler-icon"></span>
-        //         </Navbar.Toggle>
-        //         <Navbar.Collapse id="basic-navbar-nav">
-        //         <Nav className="me-auto">
-        //             <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}><AiFillHome/></Nav.Link>
-        //             <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
-        //             <Nav.Link href="#project" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('project')}>Projects</Nav.Link>
-        //         </Nav>
-        //         <span className="navbar-text">
-        //             <div className="social-icon">
-        //                 <a href="#"><img src={navIcon1} alt="" /></a>
-        //                 <a href="#"><img src={navIcon2} alt="" /></a>
-        //                 <a href="#"><img src={navIcon3} alt="" /></a>
-        //             </div>
-        //             <button className="vvd" onClick={() => console.log('connect')}>
-        //                 <span>Let's Connect</span>
-        //             </button>
-        //         </span>
-        //         </Navbar.Collapse>
-        //     </Container>
-        // </Navbar>
     )
 }

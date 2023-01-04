@@ -129,18 +129,6 @@ const Experience = () => {
                                     variant="info"
                                     content={work.desc}
                                 />
-
-
-                                {/* <ReactTooltip
-                                id={work.name}
-                                effect="solid"
-                                arrowColor="#fff"
-                                className="skills-tooltip"
-                                >
-                                {work.desc}
-                                </ReactTooltip> */}
-
-
                             </>
                             ))}
                         </motion.div>
