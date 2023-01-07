@@ -554,7 +554,7 @@ nav a.active {
   color: #4A2FBD;
 }
 .skills-tooltip {
-  max-width: 300px !important;
+  max-width: 200px !important;
   background-color: var(--white-color) !important;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.1) !important;
   border-radius: 5px !important;
@@ -565,7 +565,7 @@ nav a.active {
   opacity: 1 !important;
   /* left: calc(100% + var(--tooltip-margin)); */
   /* top: 50%; */
-  transform: translateX(200%) translateY(-150%);
+  transform: translateX(120%) translateY(-100%);
 
 
   @media screen and (min-width: 2000px) {

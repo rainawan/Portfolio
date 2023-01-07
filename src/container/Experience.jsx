@@ -50,12 +50,12 @@ const Experience = () => {
             works: [
                 {
                     name: "Snap Engineering Academy Scholar",
-                    desc: 'snap snap',
+                    desc: 'Built a functional React Native prototype that allows youth in the foster care system to share their stories. Pitched this Snap Mini to 200+ Snap community partners and executives.',
                     company: 'Snap Inc.',
                 },
                 {
                     name: "Secretary",
-                    desc: 'swe swe swe',
+                    desc: 'Shared internship and scholarship opportunities to 300+ members, bridging the gender gap in STEM and advocating to have women more equally represented in the field of technology.',
                     company: 'Society of Women Engineers',
                 },
             ]
@@ -65,7 +65,7 @@ const Experience = () => {
             works: [
                 {
                     name: "Front Office Manager",
-                    desc: 'yes it finally works',
+                    desc: 'Maintained quality control for a realty office with over 200 agents and 300 clients. Oversaw daily business operations of 4 commercial entities.',
                     company: 'Treelane Realty',
                 }
             ]
