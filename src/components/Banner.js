@@ -1,18 +1,15 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { useState, useEffect, useRef } from "react";
 import { ArrowRight, ArrowRightCircle } from "react-bootstrap-icons";
-import headerImg from "../assets/images/me.png";
-import navIcon1 from '../assets/images/nav-icon1.svg';
-import navIcon2 from '../assets/images/nav-icon2.svg';
-import navIcon3 from '../assets/images/nav-icon3.svg';
 import {TfiLinkedin} from 'react-icons/tfi'
 import { BsGithub } from 'react-icons/bs'
 import { MdEmail } from 'react-icons/md'
+import { IoSchoolSharp } from 'react-icons/io5'
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Software Engineer", "Full-Stack Engineer"];
+    const toRotate = ["Software Engineer", "Developer"];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(100 - Math.random() * 10);
     const period = 2000;
@@ -49,7 +46,10 @@ export const Banner = () => {
                     <Col xs={12} md={6} xl={7}>
                         <h1>Hi! I'm Raina,<br></br><span className="wrap">a {text}</span></h1>
                         {/* <h1 className="cursor">_</h1> */}
-                        <p>I am a second-year Computer Science student at Pasadena City College, pursuing a career in software engineering.</p>
+                        <div className="major">
+                            <div className="school-icon"><IoSchoolSharp size={26}/></div>
+                            <p>Computer Science at Pasadena City College</p>
+                        </div>
                         
                     <div className="social-icon">   
                         <a href="#"><div className="icon"><MdEmail/></div></a>

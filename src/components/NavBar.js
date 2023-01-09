@@ -7,7 +7,7 @@ import navIcon3 from '../assets/images/nav-icon3.svg';
 import { AiOutlineHome } from 'react-icons/ai';
 import { BiBook } from 'react-icons/bi';
 import { GrProjects } from 'react-icons/gr';
-
+import { IoChatbubbleEllipsesOutline } from 'react-icons/io5';
 
 export const NavBar = () => {
 
@@ -54,7 +54,7 @@ export const NavBar = () => {
             <a href="#" onClick={()=>setActiveNav('#')} className={activeNav === '#' ? 'active' : ''} ><AiOutlineHome/></a>
             <a href="#experience" onClick={()=>setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><BiBook/></a>
             <a href="#projects" onClick={()=>setActiveNav('#projects')} className={activeNav === '#projects' ? 'active' : ''}><GrProjects/></a>
-
+            <a href="#contact" onClick={()=>setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><IoChatbubbleEllipsesOutline/></a>
         </nav>
     )
 }

@@ -55,7 +55,7 @@ export const Projects = () => {
                     <TrackVisibility>
                         {({ isVisible }) =>
                         <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                            <h2>Projects</h2>
+                            <h2 className="head-text">Projects</h2>
                             <Tab.Container id="projects-tabs" defaultActiveKey="first">
                                 <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                                     <Tab.Pane eventKey="first">
