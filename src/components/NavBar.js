@@ -1,9 +1,4 @@
 import { useState, useEffect } from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from '../assets/images/logo.png';
-import navIcon1 from '../assets/images/nav-icon1.svg';
-import navIcon2 from '../assets/images/nav-icon2.svg';
-import navIcon3 from '../assets/images/nav-icon3.svg';
 import { AiOutlineHome } from 'react-icons/ai';
 import { BiBook } from 'react-icons/bi';
 import { GrProjects } from 'react-icons/gr';

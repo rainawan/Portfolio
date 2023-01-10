@@ -169,7 +169,7 @@ nav a{
 }
 nav a:hover {
   background: rgba(0,0,0,0.3);
-  color:#AA367C;
+  color:#000000;
 }
 nav a.active {
   background: var(--color-bg);
@@ -177,6 +177,7 @@ nav a.active {
   background-color: rgb(255, 255, 255);
 }
 .head-text {
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
@@ -186,16 +187,15 @@ nav a.active {
 
 /************ Banner Css ************/
 .banner {
-  margin-top: 0;
   padding: 260px 0 300px 0;
   /* background-image: url('./assets/images/banner.jpg'); */
-  /* background: '#halo-background' */
-  background-color: transparent;
-  background-position: top center;
+  background-color: #F8EDE3;
+  /* background-position: top center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 .banner h1 {
+  color: #85586F;
   font-size: 60px;
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -257,197 +257,21 @@ nav a.active {
 }
 
 
-/************ Skills Css ************/
-.skill {
-  /* background-image: url('./assets/images/colorsharp.jpg'); */
-  /* background-position: top center; */
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 0 0 50px 0;
-  position: relative;
-}
-.skill-bx {
-  background: #ffe7f7;
-  border-radius: 64px;
-  text-align: center;
-  padding: 60px 50px;
-  margin-top: -60px;
-}
-.skill h2 {
-	font-size: 45px;
-	font-weight: 700;
-}
-.skill p {
-    color: #000000;
-    font-size: 18px;
-    letter-spacing: 0.8px;
-    line-height: 1.5em;
-    margin: 14px 0 60px 0;
-    padding-inline: 10% 10%;
-    writing-mode: horizontal-tb;
-}
-.skill-slider {
-  width: 80%;
-  margin: 0 auto;
-  position: relative;
-}
-.skill-slider .item img {
-  width: 50%;
-  margin: 0 auto 15px auto;
-}
-.background-image-left {
-  background-size: cover;
-  top: 28%;
-  position: absolute;
-  bottom: 0;
-  width: 40%;
-  z-index: -4;
-}
-
-
-/************ Projects Css ************/
-.project {
-  padding: 80px 0;
-  position: relative;
-  /* background-color: khaki; */
-}
-.project h2 {
-  padding-bottom: 35px;
-	font-size: 45px;
-	font-weight: 700;
-  text-align: center;
-}
-.project p {
-  color: #B8B8B8;
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  line-height: 1.5em;
-  margin: 14px auto 30px auto;
-  text-align: center;
-  width: 56%;
-}
-.project .nav.nav-pills {
-  width: 72%;
-  margin: 0 auto;
-  border-radius: 50px;
-  background-color: rgb(255 255 255 / 10%);
-  overflow: hidden;
-}
-.project .nav.nav-pills .nav-item {
-  width: 33.33333%;
-}
-.project .nav.nav-pills .nav-link {
-  background-color: transparent;
-  border-radius: 0;
-  padding: 17px 0;
-  color: #fff;
-  width: 100%;
-  font-size: 17px;
-  letter-spacing: 0.8px;
-  font-weight: 500;
-  position: relative;
-  transition: 0.3s ease-in-out;
-  text-align: center;
-  z-index: 0;
-}
-.project .nav.nav-pills .nav-link::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 100%;
-    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: 0.3s ease-in-out;
-}
-.proj-imgbx {
-  position: relative;
-  border-radius: 30px;
-  overflow: hidden;
-  margin-bottom: 24px;
-}
-.proj-imgbx::before {
-  content: "";
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(198,180,216,1) 55%, rgba(148,187,233,1) 100%);
-  opacity: .95;
-  position: absolute;
-  width: 100%;
-  height: 0;
-  transition: 0.4s ease-in-out;
-}
-.proj-imgbx:hover::before {
-  height: 100%;
-}
-.proj-txtx {
-  position: absolute;
-  text-align: center;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: 0.5s ease-in-out;
-  opacity: 0;
-  width: 100%;
-}
-.proj-imgbx:hover .proj-txtx {
-  top: 50%;
-  opacity: 1;
-}
-.proj-txtx h4 {
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  line-height: 1.1em;
-}
-.proj-txtx span {
-  font-style: italic;
-  font-weight: 400;
-  font-size: 15px;
-  letter-spacing: 0.8px;
-}
-.background-image-right {
-  top: 20%;
-  position: absolute;
-  bottom: 0;
-  width: 35%;
-  right: 0;
-  z-index: -4;
-}
-.icons {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-.web-icon {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  padding-top: 15px;
-}
-.web-icon:hover {
-  filter: brightness(0) invert(1);
-}
-.git-icon {
-  content: "";
-  width: 42px;
-  height: 42px;
-  /* position: absolute; */
-  border-radius: 50%;
-  padding-top: 15px;
-}
-.git-icon:hover {
-  filter: brightness(0) invert(1);
-}
-
-
 /************ Experience Css ************/
+.experience {
+  /* background-color: #85586F; #F8EDE3*/
+  /* background: linear-gradient(to bottom right, #82AAE3, #FCFFE7); */
+  /* background: linear-gradient(to bottom right, #FCE38A, #F38181); */
+  /* background: linear-gradient(to bottom right, #F8EDE3, #BDD2B6); */
+  background: linear-gradient(to bottom right, #FFDE7D, #F6416C);
+  background-size: cover;
+  padding: 40px 0 60px 0;
+}
 .app__skills {
   flex: 1;
   width: 100%;
   flex-direction: column;
 }
-
 .app__skills-container {
   width: 80%;
   margin-top: 3rem;
@@ -586,6 +410,147 @@ nav a.active {
     max-width: 500px !important;
     line-height: 2 !important;
   }
+}
+
+
+
+/************ Projects Css ************/
+.projects {
+  padding: 80px 0;
+  position: relative;
+  /* background: linear-gradient(to top right, #82AAE3, #FCFFE7); */
+  /* background: linear-gradient(to top right, #FCE38A, #F38181); */
+  /* background: linear-gradient(to top right, #F8EDE3, #BDD2B6); */
+  background: linear-gradient(to top right, #FFDE7D, #F6416C);
+  /* background-color: khaki; */
+}
+.project h2 {
+  padding-bottom: 35px;
+	font-size: 45px;
+	font-weight: 700;
+  text-align: center;
+}
+.project p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
+  text-align: center;
+  width: 56%;
+}
+.project .nav.nav-pills {
+  width: 72%;
+  margin: 0 auto;
+  border-radius: 50px;
+  background-color: rgb(255 255 255 / 10%);
+  overflow: hidden;
+}
+.project .nav.nav-pills .nav-item {
+  width: 33.33333%;
+}
+.project .nav.nav-pills .nav-link {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 17px 0;
+  color: #fff;
+  width: 100%;
+  font-size: 17px;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  z-index: 0;
+}
+.project .nav.nav-pills .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+}
+.proj-imgbx {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+.proj-imgbx::before {
+  content: "";
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(198,180,216,1) 55%, rgba(148,187,233,1) 100%);
+  opacity: .95;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  transition: 0.4s ease-in-out;
+}
+.proj-imgbx:hover::before {
+  height: 100%;
+}
+.proj-txtx {
+  position: absolute;
+  text-align: center;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  width: 100%;
+}
+.proj-imgbx:hover .proj-txtx {
+  top: 50%;
+  opacity: 1;
+}
+.proj-txtx h4 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.1em;
+}
+.proj-txtx span {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+}
+.background-image-right {
+  top: 20%;
+  position: absolute;
+  bottom: 0;
+  width: 35%;
+  right: 0;
+  z-index: -4;
+}
+.icons {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.web-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  padding-top: 15px;
+}
+.web-icon:hover {
+  filter: brightness(0) invert(1);
+}
+.git-icon {
+  content: "";
+  width: 42px;
+  height: 42px;
+  /* position: absolute; */
+  border-radius: 50%;
+  padding-top: 15px;
+}
+.git-icon:hover {
+  filter: brightness(0) invert(1);
 }
 
 
