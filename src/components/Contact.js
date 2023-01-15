@@ -3,6 +3,7 @@ import {CgPhone} from 'react-icons/cg';
 import {MdEmail} from 'react-icons/md';
 
 export const Contact = () => {
+
     return (
         <section className = "contact" id="contact">
             <h2>Stay In Touch</h2>
@@ -28,6 +29,7 @@ export const Contact = () => {
                     <div class="right-side">
                         <div class="topic-text">Let's Connect!</div>
                         <form action="#">
+                        {/* <form onsubmit="sendEmail()"> */}
                             <div class="input-box">
                                 <input type="text" placeholder="Enter your name"/>
                             </div>
