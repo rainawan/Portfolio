@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { AiOutlineHome } from 'react-icons/ai';
 import { BiBook } from 'react-icons/bi';
-import { GrProjects } from 'react-icons/gr';
+import { BsUiChecksGrid } from 'react-icons/bs';
 import { IoChatbubbleEllipsesOutline } from 'react-icons/io5';
 
 export const NavBar = () => {
@@ -48,7 +48,7 @@ export const NavBar = () => {
         <nav>
             <a href="#" onClick={()=>setActiveNav('#')} className={activeNav === '#' ? 'active' : ''} ><AiOutlineHome/></a>
             <a href="#experience" onClick={()=>setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><BiBook/></a>
-            <a href="#projects" onClick={()=>setActiveNav('#projects')} className={activeNav === '#projects' ? 'active' : ''}><GrProjects/></a>
+            <a href="#projects" onClick={()=>setActiveNav('#projects')} className={activeNav === '#projects' ? 'active' : ''}><BsUiChecksGrid/></a>
             <a href="#contact" onClick={()=>setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><IoChatbubbleEllipsesOutline/></a>
         </nav>
     )

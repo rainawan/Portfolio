@@ -109,6 +109,7 @@ p.danger {
     justify-content: center;
 }
 .social-icon a {
+    color: #3C6255;
     width: 42px;
     height: 42px;
     aspect-ratio: 1/1;
@@ -127,7 +128,7 @@ p.danger {
     width: 42px;
     height: 42px;
     position: absolute;
-    background-color: #615959;
+    background-color: #A6BB8D;
     border-radius: 50%;
     transform: scale(0);
 	  transition: 0.3s ease-in-out;
@@ -145,7 +146,7 @@ p.danger {
 }
 
 nav {
-  background: rgba(0,0,0,0.3);
+  background: rgba(33, 33, 33, 0.3);
   width: max-content;
   display: block;
   padding: 0.7rem 1.7rem;
@@ -169,14 +170,17 @@ nav a{
 }
 nav a:hover {
   background: rgba(0,0,0,0.3);
-  color:#000000;
+  color:#EAE7B1;
 }
 nav a.active {
   background: var(--color-bg);
   color: var(--color-white);
-  background-color: rgb(255, 255, 255);
+  background-color: #F8EDE3;
 }
 .head-text {
+  color: #F8EDE3;
+  font-size: 40px;
+  font-weight: 600;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -195,7 +199,7 @@ nav a.active {
   background-repeat: no-repeat; */
 }
 .banner h1 {
-  color: #85586F;
+  color: #3C6255;
   font-size: 60px;
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -263,7 +267,10 @@ nav a.active {
   /* background: linear-gradient(to bottom right, #82AAE3, #FCFFE7); */
   /* background: linear-gradient(to bottom right, #FCE38A, #F38181); */
   /* background: linear-gradient(to bottom right, #F8EDE3, #BDD2B6); */
-  background: linear-gradient(to bottom right, #FFDE7D, #F6416C);
+  /* background: linear-gradient(to bottom right, #FFDE7D, #F6416C); */
+  /* background: linear-gradient(to bottom right, #A6BB8D, #EAE7B1); */
+  /* background: linear-gradient(to bottom right, #7D6E83, #9E7676); */
+  background-color: #3C6255;
   background-size: cover;
   padding: 40px 0 60px 0;
 }
@@ -277,31 +284,16 @@ nav a.active {
   margin-top: 3rem;
   display: flex;
   flex-direction: row;
-  
-  @media screen and (max-width: 900px) {
-    width: 100%;
-    flex-direction: column;
-  }
 }
-
 .app__skills-list {
   flex: 1;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
-  /* padding-bottom: 250px; */
   margin-right: 5rem;
   margin-left: 5rem;
-  
-  @media screen and (max-width: 900px) {
-    margin-right: 0;
-    margin-left: 0;
-    justify-content: center;
-    align-items: center;
-  }
 }
-
 .app__skills-item {
   flex-direction: column;
   text-align: center;
@@ -311,32 +303,34 @@ nav a.active {
   height: 70px;
   border-radius: 50%;
   box-shadow: 0 0 25px  #ababab;
-  
-  /* div {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background-color: #fef4f5;
-
-    img {
-      width: 50%;
-      height: 50%;
-    }
-
-    &:hover {
-      box-shadow: 0 0 25px #fef4f5;
-    } */
-
-    /* @media screen and (min-width: 2000px) {
-      width: 150px;
-      height: 150px;
-    }
-
-    @media screen and (max-width: 450px) {
-      width: 70px;
-      height: 70px;
-    } */
   }
+
+@media screen and (max-width: 900px) {
+  .app__skills-container {
+    padding-left: 20px;
+    width: 100%;
+    flex-direction: column;
+  }
+  .app__skills-list {
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    margin-right: 0;
+    margin-left: 0;
+    
+  }
+  .app__skills-item {
+    width: 60px;
+    height: 60px;
+    color: red;
+  }
+}
+.p-text {
+  padding-top: 15px;
+  text-align: center;
+  color: #EAE7B1; 
+}
+  
 .app__skills-exp {
   flex: 1;
   display: flex;
@@ -347,8 +341,9 @@ nav a.active {
     margin-top: 2rem;
   }
 }
-.p-text {
+.company-text {
   padding-top: 15px;
+  text-align: left;
 }
 .app__skills-exp-item {
   width: 100%;
@@ -373,11 +368,12 @@ nav a.active {
   text-align: left;
 }
 .app__skills-exp-work h4 {
+  color: #EAE7B1;
   font-weight: 600;
 }
 .app__skills-exp-work p {
   font-weight: 400;
-  color: #797979;
+  color: #2a2a29;
   margin-top: 5px;
 }
 .app__skills-exp-year {
@@ -388,7 +384,7 @@ nav a.active {
 }
 .app__skills-exp-year p {
   font-weight: 800;
-  color: #4A2FBD;
+  color: #F8EDE3;
 }
 .skills-tooltip {
   max-width: 200px !important;
@@ -421,8 +417,8 @@ nav a.active {
   /* background: linear-gradient(to top right, #82AAE3, #FCFFE7); */
   /* background: linear-gradient(to top right, #FCE38A, #F38181); */
   /* background: linear-gradient(to top right, #F8EDE3, #BDD2B6); */
-  background: linear-gradient(to top right, #FFDE7D, #F6416C);
-  /* background-color: khaki; */
+  /* background: linear-gradient(to top right, #FFDE7D, #F6416C); */
+  background-color: #3C6255;
 }
 .project h2 {
   padding-bottom: 35px;
@@ -674,9 +670,6 @@ nav a.active {
 }
 .button input[type="button"]:hover{
   background: #5029bc;
-}
-.fas {
-  
 }
 
 @media (max-width: 950px) {

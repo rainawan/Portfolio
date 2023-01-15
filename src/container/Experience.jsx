@@ -11,6 +11,8 @@ import react from '../assets/images/react.webp';
 import html from '../assets/images/html.png';
 import css from '../assets/images/css.png';
 import github from '../assets/images/github.png';
+import node from '../assets/images/node.png';
+import vscode from '../assets/images/vscode.png';
 
 const Experience = () => {
     
@@ -42,6 +44,14 @@ const Experience = () => {
         {
             name: "GitHub",
             img: github,
+        },
+        {
+            name: "Node",
+            img: node,
+        },
+        {
+            name: "VSCode",
+            img: vscode,
         },
     ]
     const experiences = [
@@ -118,7 +128,7 @@ const Experience = () => {
                                 >
                                 <div className="work-desc" id={work.name}>
                                     <h4 className="bold-text">{work.name}</h4>
-                                    <p className="p-text">{work.company}</p>
+                                    <p className="company-text">{work.company}</p>
                                 </div>
                                 </motion.div>
                                 
