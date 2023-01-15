@@ -71,6 +71,16 @@ const Experience = () => {
     ]
     const experiences = [
         {
+            year: "2023",
+            works: [
+                {
+                    name: "NASA LSPACE MCA Scholar",
+                    desc: '',
+                    company: 'NASA - National Aeronautics and Space Administration',
+                }
+            ]
+        },
+        {
             year: "2022",
             works: [
                 {

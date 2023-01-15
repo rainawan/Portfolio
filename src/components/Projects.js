@@ -35,14 +35,14 @@ export const Projects = () => {
             title: "Recipes API", 
             description: "",
             imageUrl: recipes,
-            appUrl: "",
+            appUrl: "https://github.com/rainawan/RecipesAPI",
             githubUrl: "https://github.com/rainawan/RecipesAPI",
         },
         {
             title: "SFML Games", 
             description: "",
             imageUrl: battleship,
-            appUrl: "",
+            appUrl: "https://github.com/rainawan/SFML_Portfolio",
             githubUrl: "https://github.com/rainawan/SFML_Portfolio",
         }
     ];
