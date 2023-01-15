@@ -552,10 +552,6 @@ nav a.active {
 
 
 /************ Contact Css ************/
-/* .contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  padding: 60px 0 200px 0;
-} */
 /* Google Font CDN Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
@@ -564,6 +560,17 @@ nav a.active {
   box-sizing: border-box;
   font-family: "Poppins" , sans-serif;
 }
+.contact {
+  background-color: #F8EDE3;
+  padding: 60px 0 200px 0;
+}
+.contact h2 {
+  color: #3C6255;
+  font-size: 40px;
+  font-weight: 600;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .connect {
   margin: auto;
   padding: 10px;
@@ -571,7 +578,7 @@ nav a.active {
   align-items: center;
   justify-content: center;
   width: 85%;
-  background: #fff;
+  background: #3C6255;
   border-radius: 6px;
   padding: 50px 60px 30px 40px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -600,7 +607,7 @@ nav a.active {
   right: -15px;
   top: 50%;
   transform: translateY(-50%);
-  background: #afafb6;
+  background: #DFD3C3;
 }
 .content .left-side .details{
   margin: 14px;
@@ -608,7 +615,7 @@ nav a.active {
 }
 .content .left-side .details i{
   font-size: 30px;
-  color: #3e2093;
+  color: #7a7a7a;
   margin-bottom: 10px;
 }
 .content .left-side .details .topic{
@@ -618,7 +625,7 @@ nav a.active {
 .content .left-side .details .text-one,
 .content .left-side .details .text-two{
   font-size: 14px;
-  color: #afafb6;
+  color: #ffffff;
 }
 .connect .content .right-side{
   width: 75%;
@@ -627,7 +634,7 @@ nav a.active {
 .content .right-side .topic-text{
   font-size: 23px;
   font-weight: 600;
-  color: #3e2093;
+  color: #EAE7B1;
   text-align: left;
 }
 .right-side .input-box{
@@ -642,7 +649,7 @@ nav a.active {
   border: none;
   outline: none;
   font-size: 16px;
-  background: #F0F1F8;
+  background: #DFD3C3;
   border-radius: 6px;
   padding: 0 15px;
   resize: none;
@@ -658,18 +665,18 @@ nav a.active {
   margin-top: 12px;
 }
 .right-side .button input[type="button"]{
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-size: 18px;
   outline: none;
   border: none;
   padding: 8px 16px;
   border-radius: 6px;
-  background: #3e2093;
+  background: #A6BB8D;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .button input[type="button"]:hover{
-  background: #5029bc;
+  background: #b0cfbb;
 }
 
 @media (max-width: 950px) {
