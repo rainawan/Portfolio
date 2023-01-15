@@ -328,7 +328,7 @@ nav a.active {
 .p-text {
   padding-top: 15px;
   text-align: center;
-  color: #EAE7B1; 
+  color: #F8EDE3; 
 }
   
 .app__skills-exp {
@@ -387,19 +387,18 @@ nav a.active {
   color: #F8EDE3;
 }
 .skills-tooltip {
-  max-width: 200px !important;
+  max-width: 200px;
   background-color: var(--white-color) !important;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.1) !important;
   border-radius: 5px !important;
   padding: 1rem !important;
-  color: var(--gray-color) !important;
+  color: var(--gray-color);
   text-align: center !important;
   line-height: 1.5 !important;
   opacity: 1 !important;
   /* left: calc(100% + var(--tooltip-margin)); */
   /* top: 50%; */
   transform: translateX(120%) translateY(-100%);
-
 
   @media screen and (min-width: 2000px) {
     font-size: 1.75rem !important;

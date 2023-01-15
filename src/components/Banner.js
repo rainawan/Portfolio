@@ -52,9 +52,9 @@ export const Banner = () => {
                         </div>
                         
                     <div className="social-icon">   
-                        <a href="#"><div className="icon"><MdEmail/></div></a>
-                        <a href="#"><div className="icon"><TfiLinkedin /></div></a>
-                        <a href="#"><div className="icon"><BsGithub /></div></a>
+                        <a href="mailto:rainawan02@gmail.com"><div className="icon"><MdEmail/></div></a>
+                        <a href="https://www.linkedin.com/in/raina-wan-profile/" target="_blank"><div className="icon"><TfiLinkedin /></div></a>
+                        <a href="https://github.com/rainawan" target="_blank"><div className="icon"><BsGithub /></div></a>
                     </div>
                 
                     </Col>

@@ -5,14 +5,17 @@ import { Tooltip as ReactTooltip } from "react-tooltip";
 
 
 import python from '../assets/images/python.png';
-import cplusplus from '../assets/images/cplusplus.png';
+import cplusplus from '../assets/images/cpp.png';
 import javascript from '../assets/images/javascript.png';
 import react from '../assets/images/react.webp';
 import html from '../assets/images/html.png';
 import css from '../assets/images/css.png';
-import github from '../assets/images/github.png';
+import github from '../assets/images/git.png';
 import node from '../assets/images/node.png';
 import vscode from '../assets/images/vscode.png';
+import firebase from '../assets/images/firebase.png';
+import procreate from '../assets/images/procreate.png';
+import sfml from '../assets/images/sfml.png';
 
 const Experience = () => {
     
@@ -30,10 +33,6 @@ const Experience = () => {
             img: javascript,
         },
         {
-            name: "React",
-            img: react,
-        },
-        {
             name: "HTML",
             img: html,
         },
@@ -42,16 +41,32 @@ const Experience = () => {
             img: css,
         },
         {
+            name: "React.js",
+            img: react,
+        },
+        {
+            name: "Node.js",
+            img: node,
+        },
+        {
             name: "GitHub",
             img: github,
         },
         {
-            name: "Node",
-            img: node,
-        },
-        {
             name: "VSCode",
             img: vscode,
+        },
+        {
+            name: "Firebase",
+            img: firebase,
+        },
+        {
+            name: "Procreate",
+            img: procreate,
+        },
+        {
+            name: "SFML",
+            img: sfml,
         },
     ]
     const experiences = [
