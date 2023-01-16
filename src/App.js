@@ -16,7 +16,7 @@ function App() {
       <Banner />
       <Experience />
       <Projects />
-      <Contact />
+      {/* <Contact /> */}
     </div>
   );
 }
