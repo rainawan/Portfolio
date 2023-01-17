@@ -363,6 +363,8 @@ nav a.active {
   margin-bottom: 1rem;
   cursor: pointer;
 }
+
+
 .app__skills-exp-work .work-desc {
   text-align: left;
 }
@@ -386,32 +388,17 @@ nav a.active {
   color: #F8EDE3;
 }
 .skills-tooltip {
-  max-width: 200px;
-  background-color: var(--white-color) !important;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1) !important;
-  border-radius: 5px !important;
-  padding: 1rem !important;
-  color: var(--gray-color);
-  text-align: center !important;
-  line-height: 1.5 !important;
-  opacity: 1 !important; 
-  /* left: calc(100% + var(--tooltip-margin)); */
-  /* top: 50%; */
-  transform: translateX(120%) translateY(-100%);
-
-
-
-  /* max-width: 300px !important;
-  background-color: cornsilk !important;
-  background-color: var(--white-color) !important;
+  max-width: 300px !important;
+  background-color: #F8EDE3 !important;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.1) !important;
   border-radius: 5px !important;
   padding: 1rem !important;
   color: var(--gray-color) !important;
-  text-align: center !important;
+  text-align: left !important;
   line-height: 1.5 !important;
-  opacity: 1 !important; */
-
+  opacity: 1 !important;
+  font-style:italic;
+  /* transform: translateX(120%) translateY(-100%); */
 
 }
 

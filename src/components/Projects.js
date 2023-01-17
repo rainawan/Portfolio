@@ -42,7 +42,7 @@ export const Projects = () => {
             title: "SFML Games", 
             description: "",
             imageUrl: battleship,
-            appUrl: "https://github.com/rainawan/SFML_Portfolio",
+            appUrl: "https://youtu.be/vk1hvFkP7O8",
             githubUrl: "https://github.com/rainawan/SFML_Portfolio",
         }
     ];

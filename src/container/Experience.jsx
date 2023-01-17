@@ -75,7 +75,7 @@ const Experience = () => {
             works: [
                 {
                     name: "NASA LSPACE MCA Scholar",
-                    desc: '',
+                    desc: 'Developing skills in mission development and technical writing by working in a team of 10+ students to sustain human exploration in space.',
                     company: 'NASA - National Aeronautics and Space Administration',
                 }
             ]
@@ -160,8 +160,8 @@ const Experience = () => {
                                 <ReactTooltip
                                     anchorId={work.name}
                                     className="skills-tooltip"
-                                    place="bottom"
-                                    variant="info"
+                                    // place="bottom"
+                                    // variant="info"
                                     content={work.desc}
                                 />
                             </>
