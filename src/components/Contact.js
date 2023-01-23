@@ -2,6 +2,8 @@ import {IoLocationSharp} from 'react-icons/io5';
 import {CgPhone} from 'react-icons/cg';
 import {MdEmail} from 'react-icons/md';
 
+
+
 export const Contact = () => {
 
     return (
@@ -46,6 +48,7 @@ export const Contact = () => {
                     </div>
                 </div>
             </div>
+            
         </section>
     )
 }

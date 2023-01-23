@@ -7,7 +7,7 @@ import { IoChatbubbleEllipsesOutline } from 'react-icons/io5';
 export const NavBar = () => {
 
     const [activeNav, setActiveNav] = useState('#');
-    const [scrolled, setScrolled] = useState(false);
+    // const [scrolled, setScrolled] = useState(false);
 
 
     const sections = document.querySelectorAll('section');
@@ -31,25 +31,25 @@ export const NavBar = () => {
     };
 
 
-    useEffect(() => {
-        const onScroll = () => {
-            if (window.scrollY > 50) {
-                setScrolled(true);
-            } else {
-                setScrolled(false);
-            }
-        }
-        window.addEventListener("scroll", onScroll);
+    // useEffect(() => {
+    //     const onScroll = () => {
+    //         if (window.scrollY > 50) {
+    //             setScrolled(true);
+    //         } else {
+    //             setScrolled(false);
+    //         }
+    //     }
+    //     window.addEventListener("scroll", onScroll);
         
-        return () => window.removeEventListener("scroll", onScroll);
-    }, [])
+    //     return () => window.removeEventListener("scroll", onScroll);
+    // }, [])
 
     return (
         <nav>
             <a href="#" onClick={()=>setActiveNav('#')} className={activeNav === '#' ? 'active' : ''} ><AiOutlineHome/></a>
             <a href="#experience" onClick={()=>setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><BiBook/></a>
             <a href="#projects" onClick={()=>setActiveNav('#projects')} className={activeNav === '#projects' ? 'active' : ''}><BsUiChecksGrid/></a>
-            <a href="#contact" onClick={()=>setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><IoChatbubbleEllipsesOutline/></a>
+            {/* <a href="#contact" onClick={()=>setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><IoChatbubbleEllipsesOutline/></a> */}
         </nav>
     )
 }

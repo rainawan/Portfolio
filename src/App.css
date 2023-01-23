@@ -30,6 +30,12 @@
   box-sizing: border-box;
 }
 
+@media screen and (min-width: 1400px) {
+  .App {
+    width: 1370px;
+  }
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
@@ -397,7 +403,7 @@ nav a.active {
   text-align: left !important;
   line-height: 1.5 !important;
   opacity: 1 !important;
-  font-style:italic;
+  font-style: italic;
   /* transform: translateX(120%) translateY(-100%); */
 
 }

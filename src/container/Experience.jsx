@@ -74,7 +74,12 @@ const Experience = () => {
             year: "2023",
             works: [
                 {
-                    name: "NASA LSPACE MCA Scholar",
+                    name: "Software Engineering Fellow",
+                    desc: "Selected among 4% of candidates for the Uber Career Prep Program. Enhancing software engineering fundamentals through technical workshops, mock interviews, and mentorship from an Uber engineer.",
+                    company: "Uber Technologies Inc."
+                },
+                {
+                    name: "NASA LSPACE MCA Researcher",
                     desc: 'Developing skills in mission development and technical writing by working in a team of 10+ students to sustain human exploration in space.',
                     company: 'NASA - National Aeronautics and Space Administration',
                 }
