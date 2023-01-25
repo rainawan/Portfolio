@@ -79,7 +79,7 @@ const Experience = () => {
                     company: "Uber Technologies Inc."
                 },
                 {
-                    name: "NASA LSPACE MCA Researcher",
+                    name: "Lucy Space MCA Researcher",
                     desc: 'Developing skills in mission development and technical writing by working in a team of 10+ students to sustain human exploration in space.',
                     company: 'NASA - National Aeronautics and Space Administration',
                 }
