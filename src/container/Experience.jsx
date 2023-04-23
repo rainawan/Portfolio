@@ -74,14 +74,14 @@ const Experience = () => {
             year: "2023",
             works: [
                 {
-                    name: "Software Engineering Fellow",
+                    name: "Uber Technologies Inc.",
                     desc: "Selected among 4% of candidates for the Uber Career Prep Program. Enhancing software engineering fundamentals through technical workshops, mock interviews, and mentorship from an Uber engineer.",
-                    company: "Uber Technologies Inc."
+                    role: "Software Engineering Fellow"
                 },
                 {
-                    name: "Lucy Space MCA Researcher",
+                    name: "NASA",
                     desc: 'Developing skills in mission development and technical writing by working in a team of 10+ students to sustain human exploration in space.',
-                    company: 'NASA - National Aeronautics and Space Administration',
+                    role: 'Lucy Space MCA Researcher',
                 }
             ]
         },
@@ -89,14 +89,14 @@ const Experience = () => {
             year: "2022",
             works: [
                 {
-                    name: "Snap Engineering Academy Scholar",
+                    name: "Snap Inc.",
                     desc: 'Built a functional React Native prototype that allows youth in the foster care system to share their stories. Pitched this Snap Mini to 200+ Snap community partners and executives.',
-                    company: 'Snap Inc.',
+                    role: 'Snap Engineering Scholar',
                 },
                 {
-                    name: "Secretary",
+                    name: "Society of Women Engineers",
                     desc: 'Shared internship and scholarship opportunities to 300+ members, bridging the gender gap in STEM and advocating to have women more equally represented in the field of technology.',
-                    company: 'Society of Women Engineers',
+                    role: 'Secretary',
                 },
             ]
         },
@@ -104,9 +104,9 @@ const Experience = () => {
             year: "2021",
             works: [
                 {
-                    name: "Front Office Manager",
+                    name: "Treelane Realty",
                     desc: 'Maintained quality control for a realty office with over 200 agents and 300 clients. Oversaw daily business operations of 4 commercial entities.',
-                    company: 'Treelane Realty',
+                    role: 'Front Office Manager',
                 }
             ]
         },
@@ -158,7 +158,7 @@ const Experience = () => {
                                 >
                                 <div className="work-desc" id={work.name}>
                                     <h4 className="bold-text">{work.name}</h4>
-                                    <p className="company-text">{work.company}</p>
+                                    <p className="company-text">{work.role}</p>
                                 </div>
                                 </motion.div>
                                 
