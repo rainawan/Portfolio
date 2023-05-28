@@ -48,7 +48,7 @@ export const Banner = () => {
                         {/* <h1 className="cursor">_</h1> */}
                         <div className="major">
                             <div className="school-icon"><IoSchoolSharp size={26}/></div>
-                            <p>Computer Science at Pasadena City College</p>
+                            <p>Computer Science & Linguistics at UCLA</p>
                         </div>
                         
                     <div className="social-icon">   
