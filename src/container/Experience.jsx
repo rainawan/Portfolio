@@ -74,9 +74,14 @@ const Experience = () => {
             year: "2023",
             works: [
                 {
+                    name: "Stanford University",
+                    desc: "",
+                    role: "Summer Session Student",
+                },
+                {
                     name: "Uber Technologies Inc.",
                     desc: "Selected among 4% of candidates for the Uber Career Prep Program. Enhancing software engineering fundamentals through technical workshops, mock interviews, and mentorship from an Uber engineer.",
-                    role: "Software Engineering Fellow"
+                    role: "Software Engineering Fellow",
                 },
                 {
                     name: "NASA",
