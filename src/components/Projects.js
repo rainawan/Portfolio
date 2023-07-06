@@ -6,6 +6,7 @@ import marylane from '../assets/images/project2.png';
 import spotify from '../assets/images/project3.png';
 import recipes from '../assets/images/project4.png';
 import battleship from '../assets/images/project5.png';
+import dinein from '../assets/images/project6.jpg';
 
 export const Projects = () => {
 
@@ -44,6 +45,13 @@ export const Projects = () => {
             imageUrl: battleship,
             appUrl: "https://youtu.be/vk1hvFkP7O8",
             githubUrl: "https://github.com/rainawan/SFML_Portfolio",
+        },
+        {
+            title: "Dine in",
+            description: "",
+            imageUrl: dinein,
+            appUrl: "https://www.youtube.com/watch?v=0vi3rYoEjN0",
+            githubUrl: "https://github.com/rainawan/Dine-In",
         }
     ];
 
